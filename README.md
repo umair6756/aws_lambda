@@ -6,7 +6,7 @@ This project is an **AWS Lambda function** that automatically runs when a file i
 1. ✅ Stores file upload details in a **DynamoDB table**
 2. 📧 Sends an **email notification** using **SNS (Simple Notification Service)**
 
----
+
 
 ## 🚀 Features
 
@@ -16,7 +16,6 @@ This project is an **AWS Lambda function** that automatically runs when a file i
 - Uses UUID as a unique identifier for each record
 - Serverless and cost-effective
 
----
 
 ## 🧠 How It Works (Simple Flow)
 
@@ -26,7 +25,7 @@ This project is an **AWS Lambda function** that automatically runs when a file i
    - Saves file information to a DynamoDB table called `newtable`
    - Sends an email via SNS containing file details
 
----
+
 
 ## ⚙️ Technologies Used
 
@@ -37,7 +36,7 @@ This project is an **AWS Lambda function** that automatically runs when a file i
 - Python `boto3` library
 - UUID for unique record IDs
 
----
+
 
 ## 📁 Project Structure
 
@@ -47,7 +46,6 @@ This project is an **AWS Lambda function** that automatically runs when a file i
 └── README.md            # This file
 ```
 
----
 
 ## ✅ Prerequisites
 
@@ -61,14 +59,14 @@ Before you run the Lambda function, make sure you have:
    - `dynamodb:PutItem`
    - `sns:Publish`
 
----
+
 
 ## 🔧 Setup Instructions
 
 ### 1. Create a DynamoDB Table
 
 - Table Name: `newtable`
-- Primary Key: `unique` (String)
+- Primary Key: `id` (String)
 
 ### 2. Create an SNS Topic
 
@@ -122,7 +120,7 @@ Attach the following policy to the Lambda execution role:
   - Destination: **Lambda function**
   - Select your Lambda
 
----
+
 
 ## 🧪 Test the Project
 
@@ -131,7 +129,7 @@ Attach the following policy to the Lambda execution role:
    - ✅ DynamoDB → New record is added
    - 📧 Email → You receive a file upload notification
 
----
+
 
 ## 📝 Sample Email Content
 
@@ -145,7 +143,7 @@ Event: ObjectCreated:Put
 Time: 2025-07-07T12:00:00Z
 ```
 
----
+
 
 ## 📌 Use Cases
 
@@ -155,7 +153,6 @@ Time: 2025-07-07T12:00:00Z
 - Cloud automation practice
 - Serverless project for DevOps portfolios
 
----
 
 ## 📚 Useful AWS Docs
 
@@ -164,14 +161,14 @@ Time: 2025-07-07T12:00:00Z
 - [Amazon SNS Email Notifications](https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.html)
 - [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
----
+
 
 ## 👨‍💻 Author
 
 **Muhammad Umair**  
 *DevOps & Cloud Engineer*
 
----
+
 
 ## 📌 License
 
